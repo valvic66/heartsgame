@@ -1,0 +1,11 @@
+.stars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fa-heart {
+    font-size: 1.6em;
+    margin: .2em;
+}
