@@ -1,17 +1,35 @@
 span {
     display: inline-block;
-    margin: .5em;
+    margin: .3em;
     background-color: white;
     width: 2em;
     border: solid lightgray 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 6px black;
     cursor: pointer;
-    /* display: inline-block;
-    margin: .5em;
-    text-align: center;
-    background-color: #ccc;
-    width: 24px;
-    border-radius: 50%;
-    cursor: pointer; */
 }
+
+.answerwrapper {
+    height: 2.4em;
+    margin-bottom: 5em;
+
+    top: -25em;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hasHeight {
+    height: 2.4em;
+}
+
+@media screen and (min-width: 1024px) {
+    .answerwrapper {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+

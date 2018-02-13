@@ -6,8 +6,10 @@ import Game from './components/smart/Game';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <Game />
+      <div className="Appwrapper">
+        <div className="App">
+          <Game />
+        </div>  
       </div>
     );
   }

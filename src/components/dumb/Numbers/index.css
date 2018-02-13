@@ -1,9 +1,13 @@
-span {
-    /* display: inline-block;
-    margin: .5em;
-    text-align: center;
-    background-color: #ccc;
-    width: 24px;
-    border-radius: 50%;
-    cursor: pointer; */
+.numberswrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .numberswrapper {
+        max-width: 50%;
+        margin: 0 auto;
+    }
 }

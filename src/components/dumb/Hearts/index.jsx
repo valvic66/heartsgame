@@ -7,10 +7,14 @@ const Hearts = ({ randomNoStars, showText }) => {
         // backgroundColor: 'yellow'
     }
     return (
-        <div style={style} className="stars col-3">
-            {_.range(randomNoStars).map((star, i) => <div key={i}><i className="fa fa-heart"></i></div>)}
-            {randomNoStars !== 1 ? `Love you ${randomNoStars} times` : `Love me ${randomNoStars} time !`}
-            {/* {showText && <div>True</div>} */}
+        <div style={style} className="heartscontainer col-12 col-sm-12">
+            <div className="heartscontainer__hearts">
+                {_.range(randomNoStars).map((star, i) => <div key={i}><i className="fa fa-heart"></i></div>)}
+            </div>    
+            <div className="heartscontainer__text">
+                {randomNoStars !== 1 ? `Love you ${randomNoStars} times` : `Love me ${randomNoStars} time !`}
+                {/* {showText && <div>True</div>} */}
+            </div>    
         </div>
     );
 }

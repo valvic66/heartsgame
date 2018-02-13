@@ -1,0 +1,14 @@
+.gameover {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playAgainBtn {
+  margin-top: .5em;
+}

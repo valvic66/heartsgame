@@ -7,7 +7,7 @@ const Numbers = ({ numbers, selectNumbers }) => {
         // backgroundColor: 'red'
     }
     return (
-        <div style={style} className="col-3">
+        <div style={style} className="numberswrapper col-12 col-sm-12">
             {numbers.map((number, index) => 
                 <span key={index} onClick={() => selectNumbers(number)}>{number}</span>
             )}

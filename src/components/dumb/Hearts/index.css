@@ -1,11 +1,41 @@
-.stars {
+.heartscontainer {
+    background-color: pink;
+
+    padding: 1em;
+    height: 8em;
+
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.heartscontainer__hearts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.heartscontainer__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    
+    color: white;
+
+    -webkit-animation: spin 10s infinite linear;
+}
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotateY(0deg);}
+    100% {-webkit-transform: rotateY(360deg);}   
+}
+
 .fa-heart {
-    font-size: 1.6em;
-    margin: .2em;
+    font-size: 2em;
+    margin: .1em;
+    color: red;
+}
+
+@media screen and (min-width: 1024px) {
+    .heartscontainer {
+        max-width: 50%;
+        margin: 0 auto;
+    }
 }
